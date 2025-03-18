@@ -1,0 +1,6 @@
+data/
+project_steps.txt/
+intelichain_venv/
+tools/
+*.pyc
+project_steps.txt
