@@ -10,7 +10,7 @@ This folder is most essential(here is main logic). Three files is included:
 
 # How to use it
 ### First step
-First step is to train your own model through `traditional_ml.py` file (you should do it only once). For this folder `data` should exist with dataset in it(it should be one `.csv` file). Do it from root folder.
+First step is to train your own model through `traditional_ml.py` file (you should do it only once). To do it, folder `data` should exist with dataset in it(it should be one `.csv` file). Do it from root folder.
 ```
 python3 utils/traditional_ml.py
 ```
