@@ -74,8 +74,9 @@ class TraditionalMl:
 
 # training process
 if __name__ == "__main__":
-    df = pd.read_csv("data/SPAM text message 20170820 - Data.csv")
-
+    file = os.listdir('data/')[0]
+    df = pd.read_csv('data/'+file)
+    
     text_name = "Message"
     target_name = "Category"
 
