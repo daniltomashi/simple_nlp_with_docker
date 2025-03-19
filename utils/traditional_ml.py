@@ -74,7 +74,7 @@ class TraditionalMl:
 
 # training process
 if __name__ == "__main__":
-    file = os.listdir('data/')[0]
+    file = [i for i in os.listdir('data/') if '.csv' in i][0]
     df = pd.read_csv('data/'+file)
     
     text_name = "Message"
