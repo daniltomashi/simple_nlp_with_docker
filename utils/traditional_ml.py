@@ -6,6 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import accuracy_score, f1_score
 from text_processing import TextProcessing
 import pickle
+import os
 
 
 
@@ -87,6 +88,8 @@ if __name__ == "__main__":
     approach = TraditionalMl(df.copy(), text_name, target_name, model, vectorizer, label_encoder, metrics)
     approach.train_model()
 
+    if "tools" not in os.listdir():
+        os.mkdir("tools")
 
     with open("tools/label_encoder.pkl", "wb") as f:
         pickle.dump(approach.get_label_encoder(), f)
