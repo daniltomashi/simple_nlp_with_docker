@@ -1,4 +1,6 @@
 # Simple NLP project with docker
+Gives answer to classification problem (does your text is HAM or SPAM) with probability.
+<br>
 Root folder contains of Docker files(to run it in Docker), main.py (which is file with API) and utils
 
 # utils folder
